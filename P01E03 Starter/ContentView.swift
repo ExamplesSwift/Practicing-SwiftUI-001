@@ -29,7 +29,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: Text {
+    var body: some View {
         Image("Ray")
     }
 }
