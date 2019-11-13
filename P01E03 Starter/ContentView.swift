@@ -29,6 +29,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    let pets = ["Catie", "Laurie", "Ray", "Jessy", "Antonio"]
+    
     var body: some View {
         Image("Ray")
     }
