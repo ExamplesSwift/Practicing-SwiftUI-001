@@ -30,7 +30,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: Text {
-        Text("Hello World")
+        Image("Ray")
     }
 }
 
