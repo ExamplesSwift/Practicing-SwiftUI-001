@@ -29,20 +29,24 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    let pets = ["Catie", "Laurie", "Ray", "Jessy", "Antonio"]
-    
-    var body: some View {
-        List {
-            ForEach(pets, id: \.self){
-                Text($0)
-            }
+  
+  let pets = ["Catie", "Laurie", "Ray", "Jessy", "Antonio"]
+  
+  var body: some View {
+    ScrollView {
+      HStack {
+        ForEach(pets, id: \.self) { pet in
+          Image(pet)
+            .resizable()
+            .aspectRatio(contentMode: .fill)
         }
+      }
     }
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+  static var previews: some View {
+    ContentView()
+  }
 }
