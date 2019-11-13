@@ -33,7 +33,11 @@ struct ContentView: View {
     let pets = ["Catie", "Laurie", "Ray", "Jessy", "Antonio"]
     
     var body: some View {
-        Image("Ray")
+        List {
+            ForEach(pets, id: \.self){
+                Text($0)
+            }
+        }
     }
 }
 
